@@ -1,0 +1,96 @@
+body {
+    --background-light: #f2f2f2;
+    --background-dark: #2b3a4b;
+    --text-light: #000000;
+    --text-dark: #f0f0f0;
+    --header-bg-light: #3a5fcd;
+    --header-bg-dark: #1f2a38;
+    --button-bg-light: transparent;
+    --button-bg-dark: #3a5fcd;
+    font-family: 'Poppins', Arial, sans-serif;
+    background: var(--background-light);
+    color: var(--text-light);
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+body.dark-mode {
+    background: var(--background-dark);
+    color: var(--text-dark);
+}
+h1 {
+    margin: 20px 0 2px;
+    text-align: center;
+    font-weight: 600;
+    color: var(--text-dark);
+    background-color: var(--header-bg-light);
+    padding: 10px 15px;
+    border-radius: 6px;
+}
+body.dark-mode h1 {
+    background-color: var(--header-bg-dark);
+}
+.container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+.section-buttons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 16px;
+    justify-items: center;
+}
+.button-container {
+    width: 100px;
+    height: 125px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.shortcut-btn {
+    display: block;
+    padding: 10px;
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: transparent;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 12px;
+    font-size: 1.1em;
+    font-weight: 600;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    transition: transform 0.2s, box-shadow .2s, background-color 0.3s, color 0.3s;
+    border: 2px solid black;
+    line-height: normal;
+    box-sizing: border-box;
+    background-color: var(--button-bg-light);
+}
+body.dark-mode .shortcut-btn {
+    background-color: var(--button-bg-dark);
+    color: var(--text-dark);
+}
+.shortcut-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+.subtitle {
+    text-align: center;
+    font-size: 0.85em;
+    margin-top: 6px;
+    color: var(--text-light);
+}
+body.dark-mode .subtitle {
+    color: var(--text-dark);
+}
+.container hr {
+    border: 0;
+    border-top: 3px solid gray;
+    margin: 32px 0;
+}

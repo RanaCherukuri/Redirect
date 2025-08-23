@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shortcut Buttons</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        #theme-toggle {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            background: #eee;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: 600;
+            z-index: 1000;
+        }
+        body.dark #theme-toggle {
+            background: #333;
+            color: #eee;
+        }
+        .section-buttons {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+            gap: 12px;
+            justify-items: center;
+        }
+        .shortcut-btn {
+            width: 80px;
+            height: 80px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            border-radius: 8px;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <button id="theme-toggle" aria-label="Toggle dark/light theme">Toggle Theme</button>
+    <h1>Shortcut Buttons</h1>
+    <div class="container">
+        <section>
+            <h2>School</h2>
+            <div class="section-buttons">
+                <div class="button-container" data-id="hcpss-canvas">
+                    <a class="shortcut-btn" href="https://hcpss.instructure.com/"
+                        style="background-image: url('https://www.uab.edu/elearning/images/pictures/academic-technologies/logos/canvas.png');"
+                        title="HCPSS Canvas">
+                    </a>
+                    <div class="subtitle">HCPSS Canvas</div>
+                </div>
+                <div class="button-container" data-id="hcpss-drive">
+                    <a class="shortcut-btn" href="https://drive.google.com/drive/u/1/my-drive"
+                        style="background-image: url('https://static.vecteezy.com/system/resources/previews/025/732/724/non_2x/google-drive-logo-icon-free-vector.jpg');"
+                        title="HCPSS Drive">
+                    </a>
+                    <div class="subtitle">HCPSS Drive</div>
+                </div>
+                <div class="button-container" data-id="eagle-time">
+                    <a class="shortcut-btn" href="https://chseagletime.com/"
+                        style="background-image: url('https://static.wixstatic.com/media/e29cf3_19764c0ccee344da80288667aa0177c0~mv2.png/v1/fit/w_2500,h_1330,al_c/e29cf3_19764c0ccee344da80288667aa0177c0~mv2.png');"
+                        title="Eagle Time">
+                    </a>
+                    <div class="subtitle">Eagle Time</div>
+                </div>
+                <div class="button-container" data-id="desmos">
+                    <a class="shortcut-btn" href="https://www.desmos.com/calculator"
+                        style="background-image: url('https://www.desmos.com/calc_thumbs/production/niozepjo3i.png');"
+                        title="Desmos">
+                    </a>
+                    <div class="subtitle">Desmos</div>
+                </div>
+                <div class="button-container" data-id="outlook">
+                    <a class="shortcut-btn" href="https://outlook.office365.com/mail/"
+                        style="background-image: url('https://static.vecteezy.com/system/resources/previews/049/116/759/non_2x/microsoft-outlook-icon-transparent-background-free-png.png');"
+                        title="Outlook">
+                    </a>
+                    <div class="subtitle">Outlook</div>
+                </div>
+                <div class="button-container" data-id="deltamath">
+                    <a class="shortcut-btn" href="https://www.deltamath.com/app/student/3593880/upcoming"
+                        style="background-image: url('https://scontent-iad3-2.xx.fbcdn.net/v/t1.6435-9/109781030_2616263755308281_6046824466921519356_n.png?_nc_cat=100&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=koP_r_8pcvEQ7kNvwHrf5_x&_nc_oc=Adk4x8paOe3bOZvfCNt963NA4O8VtiEOzj1eHU22tXfmxCHFM3gYcPmmPzutjH4_IPq-BIlxlzZsre4ZOFOb_emW&_nc_zt=23&_nc_ht=scontent-iad3-2.xx&_nc_gid=JlctCjkpcjvP6vCSztGszg&oh=00_AfXhGWq8akGAhqIY8KwbxdV3AQYJ3AZMOCn2k8gqs2rFOg&oe=68D04A2B');"
+                        title="DeltaMath">
+                    </a>
+                    <div class="subtitle">DeltaMath</div>
+                </div>
+                <div class="button-container" data-id="synergy">
+                    <a class="shortcut-btn" href="https://sisstudent.hcpss.org/PXP2_ClassSchedule.aspx?AGU=0"
+                        style="background-image: url('https://home.lps.org/cs/files/2022/04/SynergyTransparent2.png');"
+                        title="Synergy">
+                    </a>
+                    <div class="subtitle">Synergy</div>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section>
+            <h2>General Purpose</h2>
+            <div class="section-buttons">
+                <div class="button-container" data-id="google">
+                    <a class="shortcut-btn" href="https://google.com"
+                        style="background-image: url('https://static.dezeen.com/uploads/2025/05/sq-google-g-logo-update_dezeen_2364_col_0-852x852.jpg');"
+                        title="Email">
+                    </a>
+                    <div class="subtitle">Google</div>
+                </div>
+                <div class="button-container" data-id="google-drive">
+                    <a class="shortcut-btn" href="https://drive.google.com/drive/u/0/my-drive"
+                        style="background-image: url('https://static.vecteezy.com/system/resources/previews/025/732/724/non_2x/google-drive-logo-icon-free-vector.jpg');"
+                        title="Google Drive">
+                    </a>
+                    <div class="subtitle">Google Drive</div>
+                </div>
+                <div class="button-container" data-id="youtube">
+                    <a class="shortcut-btn" href="https://www.youtube.com/"
+                        style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSe5B150YaTzAhnoinwDofQ6LPqIb2vOvgh2A&s');"
+                        title="YouTube">
+                    </a>
+                    <div class="subtitle">YouTube</div>
+                </div>
+                <div class="button-container" data-id="rcherugmail">
+                    <a class="shortcut-btn" href="https://mail.google.com/mail/u/2/#inbox"
+                        style="background-image: url('https://images.icon-icons.com/2642/PNG/512/google_mail_gmail_logo_icon_159346.png');"
+                        title="Professional Gmail">
+                    </a>
+                    <div class="subtitle">Professional Gmail</div>
+                </div>
+                <div class="button-container" data-id="adp">
+                    <a class="shortcut-btn" href="https://signin.adp.com"
+                        style="background-image: url('https://logos.logofury.com/logo_src/b0a054b8c73232cfdee1dcfc3f0dea30.jpeg');"
+                        title="ADP">
+                    </a>
+                    <div class="subtitle">ADP</div>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section>
+            <h2>HCC</h2>
+            <div class="section-buttons">
+                <div class="button-container" data-id="hcc-canvas">
+                    <a class="shortcut-btn" href="https://howardcc.instructure.com/"
+                        style="background-image: url('https://www.uab.edu/elearning/images/pictures/academic-technologies/logos/canvas.png');"
+                        title="HCC Canvas">
+                    </a>
+                    <div class="subtitle">HCC Canvas</div>
+                </div>
+                <div class="button-container" data-id="myhcc">
+                    <a class="shortcut-btn" href="https://www.howardcc.edu/services--support/myhcc/student-portal/"
+                        style="background-image: url('https://images.squarespace-cdn.com/content/v1/5a463ea6aeb625cd77aa265f/c9f20504-fc85-45dc-a76b-520e4182ab1c/HowardCCLogo.jpg');"
+                        title="HCC Canvas">
+                    </a>
+                    <div class="subtitle">HCC Canvas</div>
+                </div>
+                <div class="button-container" data-id="aleks">
+                    <a class="shortcut-btn" href="https://howardcc.instructure.com/courses/1128781/external_tools/103171"
+                        style="background-image: url('https://apps.asdk12.org/TechMenu/Item/GetFile/1102');"
+                        title="ALEKS">
+                    </a>
+                    <div class="subtitle">ALEKS</div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
