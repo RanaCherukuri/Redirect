@@ -10,7 +10,7 @@
     font-weight: 600;
     z-index: 1000;
 }
-.repo-btn {
+#repo-redirect {
     position: fixed;
     top: 50px;
     right: 10px;
@@ -26,7 +26,7 @@ body.dark #theme-toggle {
     background: #333;
     color: #eee;
 }
-body.dark-mode .repo-btn {
+body.dark #repo-redirect {
     background: #333;
     color: #eee;
 }
